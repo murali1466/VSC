@@ -1,9 +1,10 @@
-import React from "react";
+import React,{useEffect, useRef} from "react";
+import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTags } from "@fortawesome/free-solid-svg-icons";
 import Marquee from "react-fast-marquee";
 import IntroVideo from "../assets/IntroVideo.mp4";
-import Container from "../components/Container";
+import Container from "../Components/Container";
 import Button from "../Components/Buttons/LinkButton";
 import MarqueeElement from "../Components/MarqueeElement";
 
@@ -15,8 +16,17 @@ import GoKartingChampion from "../assets/Bookings/GokartingChampion.jpeg";
 import RopeCourse from "../assets/Bookings/Rope.jpg";
 
 function Home() {
+    const homeRef = useRef(null);
+    const location = useLocation();
+
+    useEffect(()=>{
+        if(location.pathname === "/" && homeRef.current){
+            homeRef.current.scrollIntoView({behavior: "smooth"});
+        }
+    },[location]);
+
     return (
-        <div className="w-full relative h-[40rem]">
+        <div ref={homeRef} className="w-full relative h-[40rem]">
             <video
                 className="absolute w-full h-[40rem] object-cover"
                 src={IntroVideo}

@@ -50,7 +50,9 @@ function Navbar() {
                         }
                         content={
                             <span className="inline-block">
-                                <span className="hidden sm:block">Book Now</span>
+                                <span className="hidden sm:block">
+                                    Book Now
+                                </span>
                                 <span className="block sm:hidden">
                                     <FontAwesomeIcon
                                         icon={faTags}
@@ -73,7 +75,10 @@ function Navbar() {
                         className="shadow-md shadow-black/20 flex items-center justify-center cursor-pointer rounded-full absolute right-3 top-6 hover:right-2 hover:top-5 p-1 hover:p-2 duration-150 transition-all ease-out border border-secondary"
                         onClick={handleMenu}
                     >
-                        <FontAwesomeIcon icon={faTimes} className="h-5 w-5 text-primary" />
+                        <FontAwesomeIcon
+                            icon={faTimes}
+                            className="h-5 w-5 text-primary"
+                        />
                     </div>
                     <div className="mt-10 flex items-center justify-center flex-row">
                         <div className="">
@@ -85,56 +90,88 @@ function Navbar() {
                         </div>
                     </div>
                     <div className="overflow-y-auto h-[80%] mt-5">
-                        <Link className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row">
+                        <Link
+                            onClick={handleMenu}
+                            to="/"
+                            className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row"
+                        >
                             <FontAwesomeIcon
                                 icon={faHome}
                                 className="text-primary text-2xl w-9 duration-300"
                             />
                             Home
                         </Link>
-                        <Link className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row">
+                        <Link
+                            onClick={handleMenu}
+                            to="/#about"
+                            className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row"
+                        >
                             <FontAwesomeIcon
                                 icon={faInfoCircle}
                                 className="text-primary text-2xl w-9 duration-300"
                             />
                             About
                         </Link>
-                        <Link className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row">
+                        <Link
+                            onClick={handleMenu}
+                            to="/Facilities&Activities"
+                            className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row"
+                        >
                             <FontAwesomeIcon
                                 icon={faCogs}
                                 className="text-primary text-2xl w-9 duration-300"
                             />
                             Facilities & Activities
                         </Link>
-                        <Link className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row">
+                        <Link
+                            onClick={handleMenu}
+                            to="/#packages"
+                            className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row"
+                        >
                             <FontAwesomeIcon
                                 icon={faTags}
                                 className="text-primary text-2xl w-9 duration-300"
                             />
                             Packages
                         </Link>
-                        <Link className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row">
+                        <Link
+                            onClick={handleMenu}
+                            to="/Events&Conventions"
+                            className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row"
+                        >
                             <FontAwesomeIcon
                                 icon={faHandshake}
                                 className="text-primary text-2xl w-9 duration-300"
                             />
                             Events & Conventions
                         </Link>
-                        <Link className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row">
+                        <Link
+                            onClick={handleMenu}
+                            to="/#gallery"
+                            className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row"
+                        >
                             <FontAwesomeIcon
                                 icon={faImages}
                                 className="text-primary text-2xl w-9 duration-300"
                             />
                             Gallery
                         </Link>
-                        <Link className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row">
+                        <Link
+                            onClick={handleMenu}
+                            to="/#FAQ"
+                            className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row"
+                        >
                             <FontAwesomeIcon
                                 icon={faQuestionCircle}
                                 className="text-primary text-2xl w-9 duration-300"
                             />
                             FAQs
                         </Link>
-                        <Link className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row">
+                        <Link
+                            onClick={handleMenu}
+                            to="/#contact"
+                            className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row"
+                        >
                             <FontAwesomeIcon
                                 icon={faPhoneAlt}
                                 className="text-primary text-2xl w-9 duration-300"
