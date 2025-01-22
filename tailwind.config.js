@@ -10,7 +10,8 @@ export default {
         primary:"#513089",
         secondary:"#ff9924",
         darkBlue:"#273b9f",
-        text:"#ffffff"
+        text:"#ffffff",
+        yellow:"#fad600",
       },
       fontFamily: {
         mplus: ['"Poppins"', 'serif'],
