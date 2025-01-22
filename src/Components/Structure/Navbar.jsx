@@ -112,7 +112,7 @@ function Navbar() {
                         </Link>
                         <Link
                             onClick={handleMenu}
-                            to="/Facilities&Activities"
+                            to="/#activities"
                             className="border-b border-slate-300 group hover:text-primary font-semibold text-primary font-mplus w-full hover:bg-secondary duration-300 flex items-center justify-start gap-4 p-3 flex-row"
                         >
                             <FontAwesomeIcon
