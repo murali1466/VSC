@@ -18,7 +18,7 @@ function About() {
     }, [location]);
 
     return (
-        <div className="w-full bg-gradient-to-br from-darkBlue to-darkBlue/80 h-max pt-24 md:pt-30 pb-20">
+        <div className="w-full bg-gradient-to-br from-darkBlue to-darkBlue/90 h-max pt-24 md:pt-30 pb-20">
             <div ref={aboutRef} className="font-mplus text-text pt-28 md:pt-32">
                 <Container>
                     <div className="px-5 sm:px-10">

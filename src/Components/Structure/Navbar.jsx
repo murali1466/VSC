@@ -23,9 +23,9 @@ function Navbar() {
     };
     return (
         <div className="fixed w-full z-20 flex items-center justify-between">
-            <div className="flex items-center justify-between w-full mt-4 mx-2 sm:mx-5 bg-black/40 backdrop-blur rounded-2xl shadow-customShadow">
+            <div className="flex items-center justify-center relative w-full mt-4 mx-2 sm:mx-5 bg-black/40 backdrop-blur-xl rounded-2xl shadow-customShadow">
                 <div
-                    className="ml-5 sm:ml-10 bg-text rounded-full flex items-center justify-center shadow-md shadow-black/30 p-2 hover:p-3 hover:-mr-2 duration-150 transition-all ease-out "
+                    className="absolute left-5 sm:left-10 bg-text rounded-full flex items-center justify-center shadow-md shadow-black/30 p-2 hover:p-3 duration-150 transition-all ease-out "
                     onClick={handleMenu}
                 >
                     <FontAwesomeIcon
@@ -40,29 +40,27 @@ function Navbar() {
                         className="w-20 p-1"
                     />
                 </div>
-                <div className="mr-5">
-                    <Button
-                        className={
-                            "bg-text rounded-lg px-3 py-1 pb-1.5 text-primary font-semibold shadow-customShadow"
-                        }
-                        link={
-                            "https://in.bookmyshow.com/venue/vishwanadh-sports-clubport-stadium-visakhapatnam/VSCV"
-                        }
-                        content={
-                            <span className="inline-block">
-                                <span className="hidden sm:block">
-                                    Book Now
-                                </span>
-                                <span className="block sm:hidden">
-                                    <FontAwesomeIcon
-                                        icon={faTags}
-                                        className="text-primary"
-                                    />
-                                </span>
+                <Button
+                    className={
+                        "absolute right-5 sm:right-10 bg-text rounded-lg px-3 py-1 hover:scale-110 text-primary duration-150 transition-all ease-out font-semibold shadow-customShadow"
+                    }
+                    link={
+                        "https://in.bookmyshow.com/venue/vishwanadh-sports-clubport-stadium-visakhapatnam/VSCV"
+                    }
+                    content={
+                        <span className="inline-block">
+                            <span className="hidden sm:block">
+                                Book Now
                             </span>
-                        }
-                    />
-                </div>
+                            <span className="block sm:hidden">
+                                <FontAwesomeIcon
+                                    icon={faTags}
+                                    className="text-primary"
+                                />
+                            </span>
+                        </span>
+                    }
+                />
             </div>
             <div
                 className={`absolute bg-white h-screen w-screen px-3 sm:w-max top-0 ${

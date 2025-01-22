@@ -62,7 +62,7 @@ function Home() {
                                     "https://in.bookmyshow.com/venue/vishwanadh-sports-clubport-stadium-visakhapatnam/VSCV"
                                 }
                                 className={
-                                    "bg-text text-lg rounded-lg px-3 py-1 text-primary font-bold shadow-customShadow"
+                                    "bg-text text-lg rounded-lg px-3 py-1 text-primary hover:scale-110 duration-150 transition-all ease-out font-bold shadow-customShadow"
                                 }
                             />
                         </div>
