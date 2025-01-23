@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import PackageSwiper from "../Components/PackageSwiper/Swiper";
 import Button from "../Components/Buttons/LinkButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 function Packages() {
     const location = useLocation();
@@ -19,7 +21,7 @@ function Packages() {
             className="font-mplus bg-yellow w-full pt-28 pb-20 px-5 md:px-10"
         >
             <div className="flex items-center justify-center flex-col">
-                <div className="w-full 2xl:w-[70rem]">
+                <div className="w-full 2xl:w-[70rem] relative">
                     <div className="flex items-center justify-center">
                         <p className="uppercase text-primary font-bold text-center text-3xl sm:text-4xl">
                             Jaw-Dropping Offers!
@@ -39,6 +41,7 @@ function Packages() {
                             }
                         />
                     </div>
+                    
                 </div>
             </div>
         </div>

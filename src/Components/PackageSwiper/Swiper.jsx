@@ -8,15 +8,15 @@ import SwiperCard from "./SwiperCard";
 
 // import required modules
 import { Pagination } from "swiper/modules";
-import Cycle360 from "../../assets/Packages/360Cycle.jpg"
-import AquaPark from "../../assets/Packages/AquaPark.jpg"
-import Badminton from "../../assets/Packages/Badminton.jpg"
-import Champion from "../../assets/Packages/Champion.jpg"
-import GiantSwing from "../../assets/Packages/GiantSwing.jpg"
-import GoKarting from "../../assets/Packages/GoKarting.jpg"
-import Rocket from "../../assets/Packages/Rocket.jpg"
-import RopeCourse from "../../assets/Packages/RopeCourse.jpg"
-import Swimming from "../../assets/Packages/SwimmingPool.jpg"
+import Cycle360 from "../../assets/Packages/360Cycle.jpg";
+import AquaPark from "../../assets/Packages/AquaPark.jpg";
+import Badminton from "../../assets/Packages/Badminton.jpg";
+import Champion from "../../assets/Packages/Champion.jpg";
+import GiantSwing from "../../assets/Packages/GiantSwing.jpg";
+import GoKarting from "../../assets/Packages/GoKarting.jpg";
+import Rocket from "../../assets/Packages/Rocket.jpg";
+import RopeCourse from "../../assets/Packages/RopeCourse.jpg";
+import Swimming from "../../assets/Packages/SwimmingPool.jpg";
 
 function SportsSwiper() {
     return (
@@ -24,7 +24,9 @@ function SportsSwiper() {
             <Swiper
                 slidesPerView={
                     window.innerWidth < 1024
-                        ? 2
+                        ? window.innerWidth < 640
+                            ? 1
+                            : 2
                         : 3
                 }
                 spaceBetween={15}
