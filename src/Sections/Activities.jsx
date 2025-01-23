@@ -12,6 +12,7 @@ import { faVideo, faBicycle } from "@fortawesome/free-solid-svg-icons";
 import Adventure from "../assets/Activities/adventure.jpeg";
 import Sports from "../assets/Activities/sports.jpg";
 import ActivitiesSwiper from "../Components/Swiper/Adventures";
+import SportsSwiper from "../Components/Swiper/Sports";
 
 function Activities() {
     const location = useLocation();
@@ -35,7 +36,7 @@ function Activities() {
                         onClick={() => {
                             setInView("AT");
                         }}
-                        className={`group ${
+                        className={`group cursor-pointer ${
                             window.innerWidth < 500 ? "w-[90vw]" : "w-56"
                         } h-36 hover:border-secondary hover:border-2 ${
                             inView === "AT"
@@ -91,7 +92,7 @@ function Activities() {
                         onClick={() => {
                             setInView("SE");
                         }}
-                        className={`group h-36 ${
+                        className={`group cursor-pointer h-36 ${
                             window.innerWidth < 500 ? "w-[90vw]" : "w-56"
                         } hover:border-secondary hover:border-2 ${
                             inView === "SE"
@@ -144,8 +145,20 @@ function Activities() {
                         </p>
                     </div>
                 </div>
-                <div className="mt-10 px-5 sm:px-10">
-                    <ActivitiesSwiper />
+                <div className="mt-10 px-5 sm:px-10 relative">
+                    {
+                        inView ==="AT"&&
+                        <>
+                            <ActivitiesSwiper /> 
+                            {/* <FontAwesomeIcon icon={faVideo} /> */}
+                        </>
+                    }
+                    {
+                        inView ==="SE"&&
+                        <>
+                            <SportsSwiper /> 
+                        </>
+                    }
                 </div>
             </Container>
         </div>
