@@ -32,8 +32,8 @@ function Contact() {
         const data = {
             name: details.name,
             email: details.email,
-            toMail: "srkengineering@yahoo.co.in",
-            toName: "Sree Rama Krishna Engineering Company",
+            toMail: "vishwanadhsportsclub@gmail.com",
+            toName: "Vishwanadh Sports Club",
             phone: details.number,
             subject: details.Subject, // Include inquiryType in subject
             message: details.Body,

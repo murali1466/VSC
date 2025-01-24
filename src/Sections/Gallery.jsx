@@ -20,7 +20,7 @@ function Gallery() {
         <div className="pt-28 pb-20 px-5 md:px-10" ref={galleryRef}>
             <Container>
                 <div className="text-center font-bold text-3xl md:text-4xl">
-                    <p className="uppercase text-yellow">Stay & Play</p>
+                    <p className="uppercase text-secondary">Stay & Play</p>
                     <p className="uppercase text-primary">
                         At Vishwanadh Sports&nbsp;club
                     </p>
