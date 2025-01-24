@@ -4,8 +4,16 @@ import Container from "../Components/Container";
 import axios from "axios";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faLocationDot, faEnvelope, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+    faFacebook,
+    faInstagram,
+    faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+    faLocationDot,
+    faEnvelope,
+    faMobileAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import "../Components/loader.css";
 
 function Contact() {
@@ -63,9 +71,9 @@ function Contact() {
     return (
         <div
             ref={contactSection}
-            className="font-mplus flex items-cener justify-center pt-28 pb-20 sm:px-5 md:px-10"
+            className="font-mplus flex items-center justify-center flex-col pt-28"
         >
-            <div className="w-full lg:w-[50rem] flex items-center justify-center ">    
+            <div className="w-full lg:w-[50rem] flex items-center justify-center sm:mx-5">
                 <div className="bg-secondary w-full flex items-center justify-between flex-col sm:flex-row gap-5 p-5 py-10 rounded-xl shadow-customShadow">
                     <div className="ml-5 sm:w-[17rem] lg:w-[20rem] xl:w-auto">
                         <p className="font-bold text-4xl sm:text-3xl lg:text-4xl text-darkBlue mb-5">
@@ -115,7 +123,11 @@ function Contact() {
                             </div>
                         </div>
                     </div>
-                    <div className={`bg-text px-5 ${window.innerWidth < 350?"w-full":"w-72"} sm:w-[50%] lg:px-10 py-5 rounded-xl`}>
+                    <div
+                        className={`bg-text px-5 ${
+                            window.innerWidth < 350 ? "w-full" : "w-72"
+                        } sm:w-[50%] lg:px-10 py-5 rounded-xl`}
+                    >
                         <form action="" onSubmit={handleSubmit}>
                             <div
                                 className={`${
@@ -246,27 +258,29 @@ function Contact() {
                                 />
                             </div>
                             <div className="flex justify-center mt-5">
-                                {
-                                    loading?
+                                {loading ? (
                                     <div className="w-20 h-8 rounded bg-darkBlue flex items-center justify-center shadow-md shadow-slate-400">
-                                        <div
-                                            className="loader"
-                                        />
+                                        <div className="loader" />
                                     </div>
-                                    :
+                                ) : (
                                     <button
                                         type="submit"
                                         className="bg-darkBlue rounded-sm px-6 py-1 text-[#fff] font-semibold shadow-md shadow-slate-400 transition-all duration-300"
                                     >
                                         Submit
                                     </button>
-                                }
-                                
+                                )}
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.785144039594!2d83.30187247899548!3d17.74309992404709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943d76214e9f5%3A0x17a357a2f7e6c6a3!2sVishwanadh%20Sports%20Club!5e1!3m2!1sen!2sin!4v1737718819497!5m2!1sen!2sin"
+                className="w-full 2xl:w-[70rem] h-[15rem] lg:h-[20rem] mt-16"
+                allowFullScreen=""
+                loading="lazy"
+            ></iframe>
         </div>
     );
 }
