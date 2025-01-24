@@ -31,7 +31,7 @@ function GallerySection() {
                     <img src={Image7} alt="Gallery Image" className="rounded-xl h-[15.25rem] w-full lg:w-[13rem] xl:h-[15.25rem] xl:w-[15rem] object-cover"/>
                 </div>
             </div>
-            <div className="w-full sm:w-[28rem]">
+            <div className="w-full sm:w-[28rem] flex items-center justify-center">
                 <div className="flex lg:hidden items-center justify-center flex-col gap-2 md:gap-4 w-full md:w-[33rem]">
                     <div className="w-full">
                         <img src={Image3} alt="Gallery Image" className="rounded-xl h-[12rem] w-full md:w-[33rem] xl:h-[12rem] xl:w-[33rem] object-cover"/>
