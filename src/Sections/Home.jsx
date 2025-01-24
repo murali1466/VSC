@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTags } from "@fortawesome/free-solid-svg-icons";
 import Marquee from "react-fast-marquee";
 import IntroVideo from "../assets/IntroVideo.mp4";
+import Thumbnail from "../assets/VideoThumbnail.svg";
 import Container from "../Components/Container";
 import Button from "../Components/Buttons/LinkButton";
 import MarqueeElement from "../Components/MarqueeElement";
@@ -30,10 +31,13 @@ function Home() {
             <video
                 className="absolute w-full h-[40rem] object-cover"
                 src={IntroVideo}
+                controls
                 autoPlay
-                muted
                 loop
+                muted
                 playsInline
+                preload="auto"
+                poster={Thumbnail}
             />
             <div className="bg-gradient-to-b from-black/70 via-black/20 to-black/70 w-full h-[40rem] absolute top-0"></div>
             <div className="w-full absolute top-0 left-0 flex items-center justify-center">

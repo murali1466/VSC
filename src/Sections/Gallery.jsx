@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+
 import Container from "../Components/Container";
 import Video from "../assets/IntroVideo.mp4";
+import Thumbnail from "../assets/VideoThumbnail.svg";
+import GallerySection from "../Components/GallerySection";
 
 function Gallery() {
     const location = useLocation();
@@ -14,7 +17,7 @@ function Gallery() {
     }, [location]);
 
     return (
-        <div className="pt-28 pb-20" ref={galleryRef}>
+        <div className="pt-28 pb-20 px-5 md:px-10" ref={galleryRef}>
             <Container>
                 <div className="text-center font-bold text-3xl md:text-4xl">
                     <p className="uppercase text-yellow">Stay & Play</p>
@@ -32,8 +35,11 @@ function Gallery() {
                         muted
                         playsInline
                         preload="auto"
-                        // poster='https://source.unsplash.com/800x600/?sports'
+                        poster={Thumbnail}
                     />
+                </div>
+                <div className="my-10 flex items-center justify-center">
+                    <GallerySection />
                 </div>
             </Container>
         </div>
