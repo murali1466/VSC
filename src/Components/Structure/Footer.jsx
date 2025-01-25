@@ -27,6 +27,9 @@ function Footer() {
 							<a href="" target="_blank">
 								<FontAwesomeIcon icon={faYoutube} />
 							</a>
+							<a href="" target="_blank">
+								<FontAwesomeIcon icon={faWhatsapp} />
+							</a>
 						</div>
 					</div>
 					<div>
@@ -56,10 +59,6 @@ function Footer() {
 							<div className="flex items-start justify-start gap-5">
 								<FontAwesomeIcon icon={faEnvelope} className="mt-1"/>
 								<a href="mailto:vishwanadhsportsclub@gmail.com" className="max-w-52">vishwanadhsportsclub @gmail.com</a>
-							</div>
-							<div className="flex items-start justify-start gap-5">
-								<FontAwesomeIcon icon={faWhatsapp} className="mt-1"/>
-								<a href="" className="max-w-52">vishwanadhsportsclub @gmail.com</a>
 							</div>
 						</div>
 					</div>
