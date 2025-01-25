@@ -15,43 +15,43 @@ function BottomBar() {
                 <a
                     href="https://maps.app.goo.gl/5rFq3T8XXKWhSMgq9"
                     target="_blank"
-                    className="bg-yellow p-2 rounded-xl flex items-center justify-center flex-col gap-1 h-12 w-[4rem]"
+                    className="bg-yellow p-2 rounded-xl flex items-center justify-center flex-col gap-1 w-[4rem]"
                 >
                     <FontAwesomeIcon
                         icon={faLocationDot}
-                        className="text-xl text-darkBlue"
+                        className="text-lg text-darkBlue"
                     />
-                    <p className="text-sm font-semibold">Location</p>
+                    <p className="text-[0.7rem] font-semibold">Location</p>
                 </a>
             </div>
             <div className="bg-darkBlue rounded-xl flex items-center justify-center flex-row">
                 <Link
                     to="/#packages"
-                    className="p-2 h-12 w-[4rem] flex items-center justify-center flex-col gap-1 border-r border-text/30"
+                    className="p-2 w-[4rem] flex items-center justify-center flex-col gap-1 border-r border-text/30"
                 >
                     <FontAwesomeIcon
                         icon={faTags}
-                        className="text-xl text-yellow"
+                        className="text-lg text-yellow"
                     />
-                    <p className="text-sm text-text">Package</p>
+                    <p className="text-[0.7rem] text-text">Package</p>
                 </Link>
                 <a
                     href="https://in.bookmyshow.com/venue/vishwanadh-sports-clubport-stadium-visakhapatnam/VSCV"
                     target="_blank"
-                    className="p-2 h-12 w-[4rem] flex items-center justify-center flex-col gap-1 border-r border-text/30"
+                    className="p-2 w-[4rem] flex items-center justify-center flex-col gap-1 border-r border-text/30"
                 >
-                    <img src={Tickets} alt="Tickets" className="h-[1.3rem]" />
-                    <p className="text-sm text-text">Tickets</p>
+                    <img src={Tickets} alt="Tickets" className="h-[1.2rem]" />
+                    <p className="text-[0.7rem] text-text">Tickets</p>
                 </a>
                 <a
                     href="tel:+91 8297667878"
-                    className="p-2 h-12 w-[4rem] flex items-center justify-center flex-col gap-1"
+                    className="p-2 w-[4rem] flex items-center justify-center flex-col gap-1"
                 >
                     <FontAwesomeIcon
                         icon={faPhoneAlt}
-                        className="text-xl text-yellow rotate-90"
+                        className="text-lg text-yellow rotate-90"
                     />
-                    <p className="text-sm text-text">Contact</p>
+                    <p className="text-[0.7rem] text-text">Contact</p>
                 </a>
             </div>
         </div>
