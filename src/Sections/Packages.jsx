@@ -32,7 +32,7 @@ function Packages() {
                     </div>
                     <div className="flex items-center justify-center relative z-10">
                         <Button
-                            content={"Explore Mind-Blowing Offers"}
+                            content={<p>Explore Mind-Blowing Offers</p>}
                             link={
                                 "https://in.bookmyshow.com/venue/vishwanadh-sports-clubport-stadium-visakhapatnam/VSCV"
                             }

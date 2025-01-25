@@ -4,12 +4,12 @@ import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faYoutube, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faLocationDot, faPhone, faEnvelope, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
     return (
-        <div className="bg-darkBlue pt-16 pb-10 text-text font-mplus px-10">
+        <div className="bg-darkBlue pt-16 pb-20 text-text font-mplus px-10">
             <Container>
 				<div className="flex items-start justify-between flex-row flex-wrap gap-10">
 					<div className="flex items-start justify-center flex-col font-light gap-5 w-60 sm:w-[20rem]">
@@ -56,6 +56,10 @@ function Footer() {
 							<div className="flex items-start justify-start gap-5">
 								<FontAwesomeIcon icon={faEnvelope} className="mt-1"/>
 								<a href="mailto:vishwanadhsportsclub@gmail.com" className="max-w-52">vishwanadhsportsclub @gmail.com</a>
+							</div>
+							<div className="flex items-start justify-start gap-5">
+								<FontAwesomeIcon icon={faWhatsapp} className="mt-1"/>
+								<a href="" className="max-w-52">vishwanadhsportsclub @gmail.com</a>
 							</div>
 						</div>
 					</div>
