@@ -1,16 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Button as LinkButton } from "@mui/material";
 
 function Button({ content, className, link }) {
     return (
-        <button
+        // <button
+        //     className={`${className} cursor-pointer`}
+        //     onClick={() => {
+        //         window.open(link,"_blank");
+        //     }}
+        // >
+        //     {content}
+        // </button>
+        <LinkButton
             className={`${className} cursor-pointer`}
+            variant="normal"
+            sx={{background:"White",color:"black"}}
             onClick={() => {
                 window.open(link,"_blank");
             }}
         >
             {content}
-        </button>
+        </LinkButton>
     );
 }
 // Button.propTypes = {
