@@ -1,33 +1,41 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button as LinkButton } from "@mui/material";
+import { Button as MUIButton } from "@mui/material";
 
-function Button({ content, className, link }) {
+function Button({ content, className = "", link = "#" }) {
+    const handleClick = () => {
+        if (link && /^https?:\/\//.test(link)) {
+            window.open(link, "_blank");
+        } else {
+            console.error("Invalid link provided:", link);
+        }
+    };
+
     return (
         <button
             className={`${className} cursor-pointer`}
-            onClick={() => {
-                window.open(link,"_blank");
-            }}
+            onClick={handleClick}
+            style={{ background: "white", color: "black", padding: "8px 16px", border: "none", borderRadius: "4px", cursor: "pointer" }}
         >
             {content}
         </button>
-        // <LinkButton
-        //     className={`${className} cursor-pointer`}
-        //     variant="normal"
-        //     sx={{background:"White",color:"black"}}
-        //     onClick={() => {
-        //         window.open(link,"_blank");
-        //     }}
+
+        // Alternatively, you can use Material-UI's Button component:
+        // <MUIButton
+        //     className={className}
+        //     variant="contained"
+        //     sx={{ background: "white", color: "black" }}
+        //     onClick={handleClick}
         // >
         //     {content}
-        // </LinkButton>
+        // </MUIButton>
     );
 }
-// Button.propTypes = {
-//     content: PropTypes.object.isRequired || PropTypes.string.isRequired,
-//     className: PropTypes.string,
-//     link: PropTypes.string,
-// };
+
+Button.propTypes = {
+    content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+    className: PropTypes.string,
+    link: PropTypes.string,
+};
 
 export default Button;
