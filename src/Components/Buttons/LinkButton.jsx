@@ -4,24 +4,24 @@ import { Button as LinkButton } from "@mui/material";
 
 function Button({ content, className, link }) {
     return (
-        // <button
-        //     className={`${className} cursor-pointer`}
-        //     onClick={() => {
-        //         window.open(link,"_blank");
-        //     }}
-        // >
-        //     {content}
-        // </button>
-        <LinkButton
+        <button
             className={`${className} cursor-pointer`}
-            variant="normal"
-            sx={{background:"White",color:"black"}}
             onClick={() => {
                 window.open(link,"_blank");
             }}
         >
             {content}
-        </LinkButton>
+        </button>
+        // <LinkButton
+        //     className={`${className} cursor-pointer`}
+        //     variant="normal"
+        //     sx={{background:"White",color:"black"}}
+        //     onClick={() => {
+        //         window.open(link,"_blank");
+        //     }}
+        // >
+        //     {content}
+        // </LinkButton>
     );
 }
 // Button.propTypes = {
