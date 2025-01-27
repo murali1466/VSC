@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button as MUIButton } from "@mui/material";
 
 function Button({ content, className = "", link = "#" }) {
     const handleClick = () => {
