@@ -19,16 +19,6 @@ function Button({ content, className = "", link = "#" }) {
         >
             {content}
         </button>
-
-        // Alternatively, you can use Material-UI's Button component:
-        // <MUIButton
-        //     className={className}
-        //     variant="contained"
-        //     sx={{ background: "white", color: "black" }}
-        //     onClick={handleClick}
-        // >
-        //     {content}
-        // </MUIButton>
     );
 }
 
