@@ -22,7 +22,7 @@ MarqueeElement.propTypes = {
     img: PropTypes.string,
     content: PropTypes.string,
     className:PropTypes.string,
-    link:PropTypes.String,
+    link:PropTypes.string,
 }
 
 export default MarqueeElement;

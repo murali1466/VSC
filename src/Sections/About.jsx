@@ -10,8 +10,6 @@ function About() {
     const aboutRef = useRef(null);
     const location = useLocation();
 
-    console.log(location);
-
     useEffect(() => {
         if (location.hash === "#about" && aboutRef.current) {
             aboutRef.current.scrollIntoView({ behavior: "smooth" });
