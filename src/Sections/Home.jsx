@@ -16,6 +16,9 @@ import GoKarting from "../assets/Bookings/Gokarting.jpg";
 import GoKartingChampion from "../assets/Bookings/GokartingChampion.jpeg";
 import RopeCourse from "../assets/Bookings/Rope.jpg";
 
+import Logo from "../assets/logo.png";
+import Name from "../assets/AdevturesName.svg";
+
 function Home() {
     const homeRef = useRef(null);
     const location = useLocation();
@@ -43,10 +46,15 @@ function Home() {
             <div className="w-full absolute top-0 left-0 flex items-center justify-center">
                 <Container>
                     <div className="px-5 md:px-20 h-[40rem] flex flex-col justify-center">
-                        <p className="text-text uppercase font-mplus text-3xl md:text-5xl md:leading-[4rem] lg:text-[3rem] lg:leading-[4rem] font-bold text-center">
+                        {/* <p className="text-text uppercase font-mplus text-3xl md:text-5xl md:leading-[4rem] lg:text-[3rem] lg:leading-[4rem] font-bold text-center">
                             Vishwanadh's Sports Club Adventure Thrill City
-                        </p>
-                        <p className="font-mplus font-extralight text-xl text-center text-text mt-5">
+                        </p> */}
+                        <div className="flex items-center justify-center flex-col">
+                            <img src={Logo} alt="Vishwanadh Sports Club" className="h-12 mb-2" style={{filter:"drop-shadow(0px 0px 5px rgba(0,0,0))"}}/>
+                            <img src={Name} alt="Adventures and Thrills" className="w-60" style={{filter:"drop-shadow(0px 0px 5px rgba(0,0,255,0.7))"}}/>
+                            
+                        </div>
+                        <p className="font-mplus font-extralight text-xl text-center text-text">
                             Your Ultimate Adventure and Sports Destination
                         </p>
                         <div className="flex items-center justify-center flex-row mt-5">
@@ -62,9 +70,8 @@ function Home() {
                                         </span>
                                     </span>
                                 }
-                                link={
-                                    "https://in.bookmyshow.com/venue/vishwanadh-sports-clubport-stadium-visakhapatnam/VSCV"
-                                }
+
+                                link="https://in.bookmyshow.com/venue/vishwanadh-sports-clubport-stadium-visakhapatnam/VSCV"
                                 className={
                                     "bg-text text-lg rounded-lg px-3 py-1 text-primary hover:scale-110 duration-150 transition-all ease-out font-bold shadow-customShadow"
                                 }
