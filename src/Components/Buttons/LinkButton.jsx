@@ -6,7 +6,7 @@ function Button({ content, className, link }) {
         <button
             className={`${className} cursor-pointer`}
             onClick={() => {
-                window.open(link);
+                window.open(link,"_blank");
             }}
         >
             {content}
