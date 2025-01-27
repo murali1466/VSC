@@ -13,6 +13,7 @@ import {
     faBars,
     faTimes,
 } from "@fortawesome/free-solid-svg-icons";
+import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import Logo from "../../assets/logo.png";
 import Button from "../Buttons/LinkButton";
 import BottomBar from "../BottomBar";
@@ -44,25 +45,38 @@ function Navbar() {
                     </div>
                     <Button
                         className={
-                            "absolute right-5 sm:right-10 bg-text rounded-lg px-3 py-1 hover:scale-110 text-primary duration-150 transition-all ease-out font-semibold shadow-customShadow"
+                            "hidden sm:block absolute right-5 sm:right-10 bg-text rounded-lg px-3 py-1 hover:scale-110 text-primary duration-150 transition-all ease-out font-semibold shadow-customShadow"
                         }
                         link={
                             "https://in.bookmyshow.com/venue/vishwanadh-sports-clubport-stadium-visakhapatnam/VSCV"
                         }
                         content={
                             <span className="inline-block">
-                                <span className="hidden sm:block">
+                                <span className="">
                                     Book Now
                                 </span>
-                                <span className="block sm:hidden">
+                            </span>
+                        }
+                    />
+                    <Button
+                        className={
+                            "block sm:hidden absolute right-5 sm:right-10 bg-text rounded-lg px-3 py-1 hover:scale-110 text-primary duration-150 transition-all ease-out font-semibold shadow-customShadow"
+                        }
+                        link={
+                            "https://api.whatsapp.com/send?phone=8297667878"
+                        }
+                        content={
+                            <span className="inline-block">
+                                <span className="">
                                     <FontAwesomeIcon
-                                        icon={faTags}
-                                        className="text-primary"
+                                        icon={faWhatsapp}
+                                        className="text-primary text-xl"
                                     />
                                 </span>
                             </span>
                         }
                     />
+                    
                 </div>
                 <div
                     className={`absolute bg-white h-screen w-screen px-3 sm:w-max top-0 ${

@@ -76,43 +76,43 @@ function Home() {
             <div className="flex items-center justify-center">
                 <div className="absolute -bottom-[10rem] flex items-center justify-center flex-col">
                     <p className="text-text text-xl font-mplus font-semibold mb-5 uppercase">Select your Interest</p>
-                    <div className="w-[90vw] xl:w-[50rem]">
+                    <div className="w-[90vw] xl:w-[70rem]">
                         <Marquee className="rounded-2xl" speed={80} pauseOnHover={true} autoFill={true}>
                             <MarqueeElement 
                                 content={"360 Cycle"}
                                 img={Cycle360}
                                 link={"https://in.bookmyshow.com/sports/360-cycle-vsc/ET00390376"}
-                                className={"bg-text rounded-lg px-3 py-1 text-primary font-bold shadow-customShadow"}
+                                className={"bg-text rounded-lg px-3 py-1 text-primary text-sm font-medium shadow-customShadow"}
                             />
                             <MarqueeElement 
                                 content={"Aqua World"}
                                 img={AquaWorld}
                                 link={"https://in.bookmyshow.com/sports/aqua-world-swimming-pool-vsc/ET00389705"}
-                                className={"bg-text rounded-lg px-3 py-1 text-primary font-bold shadow-customShadow"}
+                                className={"bg-text rounded-lg px-3 py-1 text-primary text-sm font-medium shadow-customShadow"}
                             />
                             <MarqueeElement 
                                 content={"Badminton"}
                                 img={Badminton}
                                 link={"https://in.bookmyshow.com/sports/badminton-vsc/ET00390299"}
-                                className={"bg-text rounded-lg px-3 py-1 text-primary font-bold shadow-customShadow"}
+                                className={"bg-text rounded-lg px-3 py-1 text-primary text-sm font-medium shadow-customShadow"}
                             />
                             <MarqueeElement 
                                 content={<p>Go&nbsp;Karting</p>}
                                 img={GoKarting}
                                 link={"https://in.bookmyshow.com/activities/gokarting-vizag-vishwanadh-sports-club/ET00376476"}
-                                className={"bg-text rounded-lg px-3 py-1 text-primary font-bold shadow-customShadow"}
+                                className={"bg-text rounded-lg px-3 py-1 text-primary text-sm font-medium shadow-customShadow"}
                             />
                             <MarqueeElement 
                                 content={"Rope Course"}
                                 img={RopeCourse}
                                 link={"https://in.bookmyshow.com/activities/rope-course-at-adventure-thrill-city-vsc/ET00428598"}
-                                className={"bg-text rounded-lg px-3 py-1 text-primary font-bold shadow-customShadow"}
+                                className={"bg-text rounded-lg px-3 py-1 text-primary text-sm font-medium shadow-customShadow"}
                             />
                             <MarqueeElement 
                                 content={<p>Go&nbsp;Karting Champion</p>}
                                 img={GoKartingChampion}
                                 link={"https://in.bookmyshow.com/sports/gokarting-championship-vsc/ET00379295"}
-                                className={"bg-text rounded-lg px-3 py-1 text-primary font-bold shadow-customShadow"}
+                                className={"bg-text rounded-lg px-3 py-1 text-primary text-sm font-medium shadow-customShadow"}
                             />
                         </Marquee>
                     </div>

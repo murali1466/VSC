@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import PackageSwiper from "../Components/PackageSwiper/Swiper";
 import Button from "../Components/Buttons/LinkButton";
+import Bg from "../assets/Packages/Bg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCar, faBasketball, faSwimmingPool, faBaseballBatBall, faBaseballBall } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,12 +19,13 @@ function Packages() {
     return (
         <div
             ref={packageRef}
-            className="font-mplus bg-yellow w-full pt-28 pb-20 px-5 md:px-10"
+            className="font-mplus bg-yellow w-full pt-28 pb-20 px-5 md:px-10 h-max"
+            style={{background:`linear-gradient(to bottom, rgba(0, 0, 0,0.2),rgba(0 ,0 ,0,0.7)),url(${Bg})`,backgroundPosition:"center",backgroundSize:"cover"}}
         >
             <div className="flex items-center justify-center flex-col">
                 <div className="w-full 2xl:w-[70rem] relative">
                     <div className="flex items-center justify-center relative z-10">
-                        <p className="uppercase text-primary font-bold text-center text-3xl sm:text-4xl">
+                        <p className="uppercase text-text font-bold text-center text-3xl sm:text-4xl">
                             Jaw-Dropping Offers!
                         </p>
                     </div>
@@ -41,11 +43,11 @@ function Packages() {
                             }
                         />
                     </div>
-                    <FontAwesomeIcon icon={faBaseballBall} className="text-darkBlue/70 absolute text-[5rem] -top-20"/>
+                    {/* <FontAwesomeIcon icon={faBaseballBall} className="text-darkBlue/70 absolute text-[5rem] -top-20"/>
                     <FontAwesomeIcon icon={faBaseballBatBall} className="text-darkBlue/70 absolute text-3xl right-0 bottom-10"/>
                     <FontAwesomeIcon icon={faSwimmingPool} className="text-darkBlue/70 absolute text-5xl -bottom-10 left-[50%]"/>
                     <FontAwesomeIcon icon={faBasketball} className="text-darkBlue/70 absolute text-3xl top-0 right-[20%]"/>
-                    <FontAwesomeIcon icon={faCar} className="text-darkBlue/70 absolute text-[3rem] bottom-16 left-[20%]"/>
+                    <FontAwesomeIcon icon={faCar} className="text-darkBlue/70 absolute text-[3rem] bottom-16 left-[20%]"/> */}
                 </div>
             </div>
         </div>

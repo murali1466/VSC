@@ -41,8 +41,8 @@ function Footer() {
 							<Link to="/#packages" className="block">Packages</Link>
 							<Link to="/Events&Conventions" className="block">Events & Conventions</Link>
 							<Link to="/#gallery" className="block">Gallery</Link>
-							<Link to="/#FAQ">FAQ's</Link>
-							<Link to="/#contact">Contact</Link>
+							<Link to="/#FAQ" className="block">FAQ's</Link>
+							<Link to="/#contact" className="block">Contact</Link>
 						</div>
 					</div>
 					<div className="w-60 sm:w-[18rem]">
@@ -56,9 +56,9 @@ function Footer() {
 								<FontAwesomeIcon icon={faMobileAlt} className="mt-1"/>
 								<a href="tel:++91 8297667878">+91 8297667878</a>
 							</div>
-							<div className="flex items-start justify-start gap-5">
+							<div className="flex items-start justify-start gap-5 -ml-0.5">
 								<FontAwesomeIcon icon={faEnvelope} className="mt-1"/>
-								<a href="mailto:vishwanadhsportsclub@gmail.com" className="max-w-52">vishwanadhsportsclub @gmail.com</a>
+								<a href="mailto:vishwanadhsportsclub@gmail.com" className="max-w-52 -ml-0.5">vishwanadhsportsclub @gmail.com</a>
 							</div>
 						</div>
 					</div>

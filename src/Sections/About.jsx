@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+// import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Bg from "../assets/About/Bg.jpg";
 import Rating from "../assets/About/4.7Rating.svg"
 import Container from "../Components/Container";
 import AboutImage from "../assets/About/About.png";
@@ -18,7 +19,7 @@ function About() {
     }, [location]);
 
     return (
-        <div className="w-full bg-gradient-to-br from-darkBlue to-darkBlue/90 h-max pt-24 md:pt-30 pb-20">
+        <div className="w-full bg-gradient-to-br  h-max pt-24 md:pt-30 pb-20" style={{background:`linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.6)), url(${Bg}`,backgroundSize:"cover",backgroundPosition:"center"}}>
             <div ref={aboutRef} className="font-mplus text-text pt-28 md:pt-32">
                 <Container>
                     <div className="px-5 sm:px-10">

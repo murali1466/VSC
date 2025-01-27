@@ -8,7 +8,7 @@ function SwiperCard({Image, Link}) {
   return (
     <div className='relative rounded-xl overflow-hidden mb-10'>
         <img src={Image} alt="Actvity Image" className='rounded-xl'/>
-        <div className='absolute bg-gradient-to-b rounded-xl from-black/0 to-black/80 h-[80%] w-full bottom-0'></div>
+        <div className='absolute bg-gradient-to-b rounded-xl from-text/0 to-text/30 h-[80%] w-full bottom-0'></div>
         <div>
             <Button 
                 content={
